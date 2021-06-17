@@ -7,8 +7,8 @@ android {
         applicationId "com.mibtech.aesthetic_am"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 3
-        versionName "3.0.1"
+        versionCode 5
+        versionName "5.0.1"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
         useLibrary 'org.apache.http.legacy'

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Aesthetic A. M.</string>
+    <string name="app_name">Aesthetic AM</string>
 
     <!-- ************************************************************************************************************* -->
     <!--    For privacy policy and terms and condition whatever you set words in privacy_policy and terms_conditions that words must be contain in msg_privacy_terms.Other wise app will crash-->
@@ -107,8 +107,8 @@
     <string name="pay_u_pay">PayU Money</string>
     <string name="paypal_pay">PayPal</string>
     <string name="paystack">Paystack</string>
-    <string name="razor_payment">RazorPay</string>
-    <string name="razor_pay">RazorPay</string>
+    <string name="razor_payment">RazorPay ( GPAY, PhonePay, Other UPI )</string>
+    <string name="razor_pay">RazorPay( GPAY, PhonePay, Other UPI )</string>
     <string name="pay_u">PayUMoney</string>
     <string name="paypal">PayPal</string>
     <string name="resend">Resend OTP</string>
