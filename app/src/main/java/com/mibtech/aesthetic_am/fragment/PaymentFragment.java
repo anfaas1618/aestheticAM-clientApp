@@ -2,9 +2,11 @@ package com.mibtech.aesthetic_am.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -105,6 +107,7 @@ public class PaymentFragment extends Fragment implements PaytmPaymentTransaction
     Session session;
     double total;
     View root;
+    TextView instagramPAY;
     private ShimmerFrameLayout mShimmerViewContainer;
 
     @SuppressLint("SetTextI18n")
@@ -184,7 +187,22 @@ public class PaymentFragment extends Fragment implements PaytmPaymentTransaction
                 }
             }
         });
+        instagramPAY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://instagram.com/_u/aestheticam.in");
+                Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
+                likeIng.setPackage("com.instagram.android");
+
+                try {
+                    startActivity(likeIng);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/aestheticam.in")));
+                }
+            }
+        });
         return root;
     }
 
@@ -192,6 +210,7 @@ public class PaymentFragment extends Fragment implements PaytmPaymentTransaction
         recyclerView = root.findViewById(R.id.recyclerView);
 
         rbPayTm = root.findViewById(R.id.rbPayTm);
+        instagramPAY=root.findViewById(R.id.instagramPAY);
         rbPayStack = root.findViewById(R.id.rbPayStack);
         rbFlutterWave = root.findViewById(R.id.rbFlutterWave);
         rbCOD = root.findViewById(R.id.rbCOD);

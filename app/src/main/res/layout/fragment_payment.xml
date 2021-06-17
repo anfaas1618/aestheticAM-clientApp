@@ -224,7 +224,7 @@
                     <RadioButton
                         android:id="@+id/rbRazorPay"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
                         android:button="@drawable/ic_radio_button"
                         android:drawableEnd="@drawable/ic_razorpay"
                         android:drawablePadding="@dimen/_10sdp"
@@ -318,6 +318,22 @@
                         android:text="@string/paytm"
                         android:textSize="@dimen/_12sdp"
                         android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/instagramPAY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_radio_button"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/ic_about"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layoutDirection="rtl"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="@string/paytm"
+                        android:text="for COD and Paytm message us on instagram at @aestheticam.in \n click here to visit our instagram"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
                 </RadioGroup>
             </LinearLayout>
 
