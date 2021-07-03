@@ -118,7 +118,7 @@ public class DrawerActivity extends AppCompatActivity {
                     .transform(new CircleTransform())
                     .into(imgProfile);
         }
-
+//
         lytProfile.setOnClickListener(v -> {
             drawer_layout.closeDrawers();
             if (session.isUserLoggedIn()) {
