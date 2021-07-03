@@ -58,6 +58,7 @@ public class DrawerActivity extends AppCompatActivity {
     public static DrawerLayout drawer_layout;
     public static ImageView imgProfile;
     public static NavigationView navigationView;
+    //
     public ActionBarDrawerToggle drawerToggle;
     public TextView tvMobile;
     protected FrameLayout frameLayout;
